@@ -59,16 +59,17 @@ ul > li {
     list-style-type: none;
 }
 
-/* most browsers can't do first-of-type */
-/* fixme: the above statement is wrong  */
+body > ul > li > a {
+    display: inline;
+}
 
-ul > li > a {
+body > ul > li > a:first-child {
     background-color: #DDDDDD;
     background-position: center center;
     background-repeat: no-repeat;
     border:1px solid #AAAAAA;
     color: transparent !important;
-    display: block;
+    display: none;
     float:left;
     height: 150px;
     margin: 0px 10px 10px 0px;
@@ -77,99 +78,71 @@ ul > li > a {
 
 /* erster Faden */
 
-p + h3 + ul > li > a { background-image: url("http://www.lulzlunch.com/random/b"); }
+body > ul:first-of-type > li:first-child > a:first-child {
+    background-image: url("http://www.lulzlunch.com/random/b");
+    display: block;
+}
 
-p + h3 + ul > li + li > a { display: none; }
-
-p + h3 + ul > li + li > a + a { display: inline; }
-
-p + h3 + ul > li + li + li > a {
+body > ul:first-of-type > li:nth-child(3) > a:first-child {
     background-image: url("http://www.lulzlunch.com/random/co");
     display: block;
 }
 
-p + h3 + ul > li + li + li + li > a {
+body > ul:first-of-type > li:nth-child(4) > a:first-child {
     background-image: url("http://www.lulzlunch.com/random/hc");
     display: block;
 }
 
-p + h3 + ul > li + li + li + li + li > a { display: none; }
-
-p + h3 + ul > li + li + li + li + li > a + a { display: inline; }
-
 /* zweiter Faden */
 
-p + h3 + ul + h3 + ul > li > a { background-image: url("http://www.lulzlunch.com/random/k"); }
+body > ul:nth-of-type(2) > li:first-child > a:first-child {
+    background-image: url("http://www.lulzlunch.com/random/k");
+    display: block;
+}
 
-p + h3 + ul + h3 + ul > li + li > a { display: none; }
-
-p + h3 + ul + h3 + ul > li + li > a + a { display: inline; }
-
-p + h3 + ul + h3 + ul > li + li + li > a {
+body > ul:nth-of-type(2) > li:nth-child(3) > a:first-child {
     background-image: url("http://www.lulzlunch.com/random/tv");
     display: block;
 }
 
-p + h3 + ul + h3 + ul > li + li + li + li > a { display: none; }
-
-p + h3 + ul + h3 + ul > li + li + li + li > a + a { display: inline; }
-
-p + h3 + ul + h3 + ul > li + li + li + li + li + li > a {
+body > ul:nth-of-type(2) > li:nth-child(6) > a:first-child {
     background-image: url("http://www.lulzlunch.com/random/tg");
     display: block;
 }
 
-p + h3 + ul + h3 + ul > li + li + li + li + li + li + li > a { display: none;}
-
-p + h3 + ul + h3 + ul > li + li + li + li + li + li + li > a + a { display: inline;}
-
 /* dritter Faden */
 
-p + h3 + ul + h3 + ul + h3 + ul > li > a { background-image: url("http://www.lulzlunch.com/random/v"); }
+body > ul:nth-of-type(3) > li:first-child > a:first-child {
+    background-image: url("http://www.lulzlunch.com/random/v");
+    display: block;
+}
 
-p + h3 + ul + h3 + ul + h3 + ul > li + li > a { display: none; }
-
-p + h3 + ul + h3 + ul + h3 + ul > li + li > a + a { display: inline; }
-
-p + h3 + ul + h3 + ul + h3 + ul > li + li + li + li + li > a {
+body > ul:nth-of-type(3) > li:nth-child(5) > a:first-child {
     background-image: url("http://www.lulzlunch.com/random/x");
     display: block;
 }
 
-p + h3 + ul + h3 + ul + h3 + ul > li + li + li + li + li + li > a {
+body > ul:nth-of-type(3) > li:nth-child(6) > a:first-child {
     background-image: url("http://www.lulzlunch.com/random/o");
     display: block;
 }
 
-p + h3 + ul + h3 + ul + h3 + ul > li + li + li + li + li + li + li > a { display: none; }
-
-p + h3 + ul + h3 + ul + h3 + ul > li + li + li + li + li + li + li > a + a { display: inline; }
-
 /* vierter Faden */
 
-p + h3 + ul + h3 + ul + h3 + ul + h3 + ul > li > a { background-image: url("http://www.lulzlunch.com/random/g"); }
+body > ul:nth-of-type(4) > li:first-child > a:first-child {
+    background-image: url("http://www.lulzlunch.com/random/g");
+    display: block;
+}
 
-p + h3 + ul + h3 + ul + h3 + ul + h3 + ul > li + li > a { display: none; }
-
-p + h3 + ul + h3 + ul + h3 + ul + h3 + ul > li + li > a + a { display: inline; }
-
-p + h3 + ul + h3 + ul + h3 + ul + h3 + ul > li + li + li  > a {
+body > ul:nth-of-type(4) > li:nth-child(3) > a:first-child  > a {
     background-image: url("http://www.lulzlunch.com/random/ck");
     display: block;
 }
 
-p + h3 + ul + h3 + ul + h3 + ul + h3 + ul > li + li + li + li > a { display: none; }
-
-p + h3 + ul + h3 + ul + h3 + ul + h3 + ul > li + li + li + li > a + a { display: inline; }
-
-p + h3 + ul + h3 + ul + h3 + ul + h3 + ul > li + li + li + li + li  > a {
+body > ul:nth-of-type(4) > li:nth-child(5) > a:first-child  > a {
     background-image: url("http://www.lulzlunch.com/random/jp");
     display: block;
 }
-
-p + h3 + ul + h3 + ul + h3 + ul + h3 + ul > li + li + li + li + li + li > a { display: none; }
-
-p + h3 + ul + h3 + ul + h3 + ul + h3 + ul > li + li + li + li + li + li > a + a { display: inline; }
 
 /* reset */
 
