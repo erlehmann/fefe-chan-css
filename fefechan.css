@@ -161,6 +161,12 @@ body > ul > li:nth-child(10) > a:first-child {
     display: block;
 }
 
+/* Abstand halten zum nächsten Faden */
+
+body > ul > li:last-of-type {
+    margin-bottom: 10px;
+}
+
 /* reset */
 
 ul > li > a+a:before,
