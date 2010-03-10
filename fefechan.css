@@ -46,7 +46,11 @@ h3 {
 }
 
 h3:after {
-    content: " [Antworten]"
+    color: #222299;
+    content: "[Antworten]";
+    cursor: pointer;
+    margin-left: 1ex;
+    text-decoration: underline;
 }
 
 ul {
