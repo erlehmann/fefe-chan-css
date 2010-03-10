@@ -1,0 +1,222 @@
+body {
+    background: #eeeeee url(banner.png) no-repeat scroll center 50px;
+    font-family: sans-serif;
+    font-size: 80%;
+    padding-top: 160px;
+}
+
+h2:before {
+    color:#000000;
+    content: "/f/ - Fefe";
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 0,67em auto 0,67em auto;
+    text-align:center;
+}
+
+/* */
+
+h2 a { display: none; }
+
+h2 + b {
+    position: absolute;
+    top: 5px;
+    left: 0px;
+}
+
+h2 + b + p[align=right] {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+}
+
+h3:before {
+   color: #3333cc;
+   content: "Fefe ";
+   font-weight: bold;
+   }
+
+h3 {
+    border-top: 1px solid black;
+    clear: left;
+    font-weight: normal;
+    margin: 10px 0px 10px 0px;
+    padding-top: 8px;
+}
+
+h3:after {
+    content: " [Antworten]"
+}
+
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+ul > li {
+    float: left;
+    list-style-type: none;
+}
+
+/* most browsers can't do first-of-type */
+/* fixme: the above statement is wrong  */
+
+ul > li > a {
+    background-color: #DDDDDD;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border:1px solid #AAAAAA;
+    color: transparent !important;
+    display: block;
+    float:left;
+    height: 150px;
+    margin: 0px 10px 10px 0px;
+    width: 200px;
+}
+
+/* erster Faden */
+
+p + h3 + ul > li > a { background-image: url("http://www.lulzlunch.com/random/b"); }
+
+p + h3 + ul > li + li > a { display: none; }
+
+p + h3 + ul > li + li > a + a { display: inline; }
+
+p + h3 + ul > li + li + li > a {
+    background-image: url("http://www.lulzlunch.com/random/co");
+    display: block;
+}
+
+p + h3 + ul > li + li + li + li > a {
+    background-image: url("http://www.lulzlunch.com/random/hc");
+    display: block;
+}
+
+p + h3 + ul > li + li + li + li + li > a { display: none; }
+
+p + h3 + ul > li + li + li + li + li > a + a { display: inline; }
+
+/* zweiter Faden */
+
+p + h3 + ul + h3 + ul > li > a { background-image: url("http://www.lulzlunch.com/random/k"); }
+
+p + h3 + ul + h3 + ul > li + li > a { display: none; }
+
+p + h3 + ul + h3 + ul > li + li > a + a { display: inline; }
+
+p + h3 + ul + h3 + ul > li + li + li > a {
+    background-image: url("http://www.lulzlunch.com/random/tv");
+    display: block;
+}
+
+p + h3 + ul + h3 + ul > li + li + li + li > a { display: none; }
+
+p + h3 + ul + h3 + ul > li + li + li + li > a + a { display: inline; }
+
+p + h3 + ul + h3 + ul > li + li + li + li + li + li > a {
+    background-image: url("http://www.lulzlunch.com/random/tg");
+    display: block;
+}
+
+p + h3 + ul + h3 + ul > li + li + li + li + li + li + li > a { display: none;}
+
+p + h3 + ul + h3 + ul > li + li + li + li + li + li + li > a + a { display: inline;}
+
+/* dritter Faden */
+
+p + h3 + ul + h3 + ul + h3 + ul > li > a { background-image: url("http://www.lulzlunch.com/random/v"); }
+
+p + h3 + ul + h3 + ul + h3 + ul > li + li > a { display: none; }
+
+p + h3 + ul + h3 + ul + h3 + ul > li + li > a + a { display: inline; }
+
+p + h3 + ul + h3 + ul + h3 + ul > li + li + li + li + li > a {
+    background-image: url("http://www.lulzlunch.com/random/x");
+    display: block;
+}
+
+p + h3 + ul + h3 + ul + h3 + ul > li + li + li + li + li + li > a {
+    background-image: url("http://www.lulzlunch.com/random/o");
+    display: block;
+}
+
+p + h3 + ul + h3 + ul + h3 + ul > li + li + li + li + li + li + li > a { display: none; }
+
+p + h3 + ul + h3 + ul + h3 + ul > li + li + li + li + li + li + li > a + a { display: inline; }
+
+/* vierter Faden */
+
+p + h3 + ul + h3 + ul + h3 + ul + h3 + ul > li > a { background-image: url("http://www.lulzlunch.com/random/g"); }
+
+p + h3 + ul + h3 + ul + h3 + ul + h3 + ul > li + li > a { display: none; }
+
+p + h3 + ul + h3 + ul + h3 + ul + h3 + ul > li + li > a + a { display: inline; }
+
+p + h3 + ul + h3 + ul + h3 + ul + h3 + ul > li + li + li  > a {
+    background-image: url("http://www.lulzlunch.com/random/ck");
+    display: block;
+}
+
+p + h3 + ul + h3 + ul + h3 + ul + h3 + ul > li + li + li + li > a { display: none; }
+
+p + h3 + ul + h3 + ul + h3 + ul + h3 + ul > li + li + li + li > a + a { display: inline; }
+
+p + h3 + ul + h3 + ul + h3 + ul + h3 + ul > li + li + li + li + li  > a {
+    background-image: url("http://www.lulzlunch.com/random/jp");
+    display: block;
+}
+
+p + h3 + ul + h3 + ul + h3 + ul + h3 + ul > li + li + li + li + li + li > a { display: none; }
+
+p + h3 + ul + h3 + ul + h3 + ul + h3 + ul > li + li + li + li + li + li > a + a { display: inline; }
+
+/* reset */
+
+ul > li > a+a:before,
+ul > li > p > a:before {
+    content: ">>";
+}
+
+ul > li > a+a,
+ul > li > p > a {
+    border: none;
+    background: transparent !important;
+    color: #222299 !important;
+    display: inline;
+    float: none;
+    height: inherit;
+    margin: 0 5px;
+    width: inherit;
+}
+
+ul > li > b:before {
+
+}
+
+ul > li+li {
+    background-color: #aaaacc;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAMgCAYAAAAulDJsAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9kMBwMPEDmrgA0AAAFGSURBVHja7dIhCsIAFIDh3UBPInoFB4t2BwaDF5jYvYxgs2ox2ARBLQaLiBgsu8LzADI2wWD4wit/+HgPXlKWZfxiEtD3UC8bx2p/i6a9Enqc1lHkWQwm8zjcX7W99rTjYhatdqdx/9zovIkiT6M/nMb28qztlVA3HcVyd42m3UOCQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCAQCgUAgEAgEAoFAIBAIBAKBQCAQCPRv0Bv2y9YZXogoZQAAAABJRU5ErkJggg==");
+    background-repeat: no-repeat;
+    clear: left;
+    float: left;
+    margin: 2px 10px;
+    padding: 8px 28px;
+}
+
+img { border: none; }
+a:link { color: #222299; }
+a:visited { color: #992222; }
+
+blockquote:before {
+    content: ">";
+}
+
+blockquote {
+   color: #007777;
+   margin-left: 0px;
+}
+
+div[align=center] {
+    clear: left;
+}
