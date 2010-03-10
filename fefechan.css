@@ -98,6 +98,11 @@ body > ul:first-of-type > li:nth-child(7) > a:first-child {
     display: block;
 }
 
+body > ul:first-of-type > li:nth-child(10) > a:first-child {
+    background-image: url("http://www.lulzlunch.com/random/c");
+    display: block;
+}
+
 /* zweiter Faden */
 
 body > ul:nth-of-type(2) > li:first-child > a:first-child {
