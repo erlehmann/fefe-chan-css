@@ -21,14 +21,14 @@ h2 a { display: none; }
 
 h2 + b {
     position: absolute;
-    top: 5px;
-    left: 0px;
+    top: 1ex;
+    left: 1ex;
 }
 
 h2 + b + p[align=right] {
     position: absolute;
-    top: 5px;
-    right: 0px;
+    top: -1ex;
+    right: 1ex;
 }
 
 h3:before {
